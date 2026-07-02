@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - AutoPortal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dashboard.html" class="logo">AutoPortal <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">| Painel</span></a>
+            <div class="nav-links">
+                <a href="dashboard.html" style="color: var(--primary-color);">Resumo</a>
+                <a href="meus_anuncios.html">Meus Anúncios</a>
+                <a href="interesses.html">Mensagens</a>
+                <a href="../index.html" class="btn btn-secondary" style="color: white; padding: 0.4rem 0.8rem;">Sair</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title" style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Bem-vindo, João!</h2>
+            <a href="cadastro_anuncio.html" class="btn btn-primary">+ Novo Anúncio</a>
+        </div>
+
+        <section class="grid-container">
+            <div class="container-box" style="flex: 1; min-width: 250px; text-align: center;">
+                <h3 style="color: var(--text-muted); font-size: 1.1rem;">Meus Anúncios Ativos</h3>
+                <div style="font-size: 3rem; font-weight: bold; color: var(--primary-color);">3</div>
+                <a href="meus_anuncios.html" style="display: block; margin-top: 1rem;">Gerenciar Anúncios</a>
+            </div>
+
+            <div class="container-box" style="flex: 1; min-width: 250px; text-align: center;">
+                <h3 style="color: var(--text-muted); font-size: 1.1rem;">Mensagens Recebidas</h3>
+                <div style="font-size: 3rem; font-weight: bold; color: var(--success-color);">12</div>
+                <a href="interesses.html" style="display: block; margin-top: 1rem;">Ver Mensagens</a>
+            </div>
+            
+            <div class="container-box" style="flex: 1; min-width: 250px; text-align: center;">
+                <h3 style="color: var(--text-muted); font-size: 1.1rem;">Visualizações (Últimos 30 dias)</h3>
+                <div style="font-size: 3rem; font-weight: bold; color: var(--text-main);">458</div>
+                <span style="display: block; margin-top: 1rem; color: var(--text-muted);">Estística simulada</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoPortal. Projeto Acadêmico UFU.</p>
+    </footer>
+</body>
+</html>

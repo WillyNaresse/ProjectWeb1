@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens de Interesse - AutoPortal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dashboard.html" class="logo">AutoPortal <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">| Painel</span></a>
+            <div class="nav-links">
+                <a href="dashboard.html">Resumo</a>
+                <a href="meus_anuncios.html">Meus Anúncios</a>
+                <a href="interesses.html" style="color: var(--primary-color);">Mensagens</a>
+                <a href="../index.html" class="btn btn-secondary" style="color: white; padding: 0.4rem 0.8rem;">Sair</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title">
+            <h2>Mensagens Recebidas</h2>
+            <p style="color: var(--text-muted);">Contatos de pessoas interessadas nos seus veículos.</p>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Veículo</th>
+                        <th>Interessado(a)</th>
+                        <th>Contato</th>
+                        <th>Mensagem</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background-color: #f8fcf8;">
+                        <td style="font-weight: 500;">Chevrolet Onix LT</td>
+                        <td>Maria Oliveira</td>
+                        <td>
+                            <div style="margin-bottom: 0.2rem;">(11) 98765-4321</div>
+                            <span style="font-size: 0.8rem; background-color: #25D366; color: white; padding: 0.1rem 0.4rem; border-radius: 4px;">WhatsApp</span>
+                        </td>
+                        <td><p style="font-size: 0.9rem; max-width: 300px; color: var(--text-muted);">Olá, tenho interesse neste veículo. Aceita troca?</p></td>
+                        <td>
+                            <button type="button" class="btn btn-danger" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 500;">Chevrolet Onix LT</td>
+                        <td>Carlos Silva</td>
+                        <td>(11) 91234-5678</td>
+                        <td><p style="font-size: 0.9rem; max-width: 300px; color: var(--text-muted);">Ainda está disponível? Podemos agendar uma visita amanhã à tarde?</p></td>
+                        <td>
+                            <button type="button" class="btn btn-danger" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 500;">Volkswagen Polo 200 TSI</td>
+                        <td>Ana Paula</td>
+                        <td>(19) 99988-7766</td>
+                        <td><p style="font-size: 0.9rem; max-width: 300px; color: var(--text-muted);">Boa tarde. Qual o menor valor para pagamento à vista?</p></td>
+                        <td>
+                            <button type="button" class="btn btn-danger" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoPortal. Projeto Acadêmico UFU.</p>
+    </footer>
+</body>
+</html>

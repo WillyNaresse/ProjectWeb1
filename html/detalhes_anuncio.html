@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Anúncio - AutoPortal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dashboard.html" class="logo">AutoPortal <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">| Painel</span></a>
+            <div class="nav-links">
+                <a href="dashboard.html">Resumo</a>
+                <a href="meus_anuncios.html" style="color: var(--primary-color);">Meus Anúncios</a>
+                <a href="interesses.html">Mensagens</a>
+                <a href="../index.html" class="btn btn-secondary" style="color: white; padding: 0.4rem 0.8rem;">Sair</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title" style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Detalhes do Seu Anúncio</h2>
+            <div class="action-buttons">
+                <a href="meus_anuncios.html" class="btn btn-secondary">Voltar</a>
+                <button type="button" class="btn btn-primary">Editar</button>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+        </div>
+
+        <section class="details-container">
+            <div class="details-gallery">
+                <img src="../assets/images/chevrolet_onix_1.jpg" alt="Chevrolet Onix Principal" class="details-main-img">
+                <div class="details-thumbnails">
+                    <img src="../assets/images/chevrolet_onix_1.jpg" alt="Thumb 1" class="thumb-img">
+                    <img src="../assets/images/chevrolet_onix_2.jpg" alt="Thumb 2" class="thumb-img">
+                    <img src="../assets/images/chevrolet_onix_3.jpg" alt="Thumb 3" class="thumb-img">
+                </div>
+            </div>
+
+            <div class="details-info">
+                <h3 style="margin-bottom: 0.5rem;">Chevrolet Onix LT 1.0 Flex</h3>
+                <div class="details-price">R$ 55.900,00</div>
+                
+                <ul class="features-list">
+                    <li><strong>Marca:</strong> Chevrolet</li>
+                    <li><strong>Ano:</strong> 2020/2020</li>
+                    <li><strong>Cor:</strong> Branco</li>
+                    <li><strong>Quilometragem:</strong> 45.000 km</li>
+                    <li><strong>Estado:</strong> Usado</li>
+                    <li><strong>Cidade:</strong> São Paulo, SP</li>
+                    <li><strong>Status:</strong> <span style="color: var(--success-color); font-weight: bold;">Ativo</span></li>
+                </ul>
+                
+                <h3>Descrição</h3>
+                <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                    Veículo em excelente estado de conservação, único dono. Todas as revisões realizadas na concessionária. Possui manual e chave reserva. Pneus novos, documentação em dia. Pronto para transferir!
+                </p>
+                
+                <div style="background-color: #e8f4fd; padding: 1.5rem; border-radius: var(--border-radius); border: 1px solid #b6d4fe;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Estatísticas do Anúncio</h3>
+                    <p><strong>Visualizações:</strong> 245</p>
+                    <p><strong>Interesses Recebidos:</strong> 3 <a href="interesses.html" style="margin-left: 1rem; font-weight: bold;">Ver mensagens</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoPortal. Projeto Acadêmico UFU.</p>
+    </footer>
+</body>
+</html>

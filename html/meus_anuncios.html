@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Anúncios - AutoPortal</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="dashboard.html" class="logo">AutoPortal <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">| Painel</span></a>
+            <div class="nav-links">
+                <a href="dashboard.html">Resumo</a>
+                <a href="meus_anuncios.html" style="color: var(--primary-color);">Meus Anúncios</a>
+                <a href="interesses.html">Mensagens</a>
+                <a href="../index.html" class="btn btn-secondary" style="color: white; padding: 0.4rem 0.8rem;">Sair</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-title" style="display: flex; justify-content: space-between; align-items: center;">
+            <h2>Meus Anúncios</h2>
+            <a href="cadastro_anuncio.html" class="btn btn-primary">+ Novo Anúncio</a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Marca / Modelo</th>
+                        <th>Ano</th>
+                        <th>Valor</th>
+                        <th>Interesses</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/images/chevrolet_onix_1.jpg" alt="Onix" style="width: 80px; height: 50px; object-fit: cover; border-radius: 4px;"></td>
+                        <td>Chevrolet Onix LT</td>
+                        <td>2020</td>
+                        <td>R$ 55.900,00</td>
+                        <td><span style="background-color: var(--success-color); color: white; padding: 0.2rem 0.5rem; border-radius: 12px; font-size: 0.8rem;">3 novos</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="detalhes_anuncio.html" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Ver Detalhes</a>
+                                <button type="button" class="btn btn-danger" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/images/vw_polo_1.jpg" alt="Polo" style="width: 80px; height: 50px; object-fit: cover; border-radius: 4px;"></td>
+                        <td>Volkswagen Polo 200 TSI</td>
+                        <td>2021</td>
+                        <td>R$ 78.500,00</td>
+                        <td><span style="color: var(--text-muted); font-size: 0.9rem;">0</span></td>
+                        <td>
+                            <div class="action-buttons">
+                                <a href="detalhes_anuncio.html" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Ver Detalhes</a>
+                                <button type="button" class="btn btn-danger" style="padding: 0.4rem 0.8rem; font-size: 0.9rem;">Excluir</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoPortal. Projeto Acadêmico UFU.</p>
+    </footer>
+</body>
+</html>

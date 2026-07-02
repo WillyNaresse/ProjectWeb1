@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPortal - Classificados de Veículos</title>
+    <meta name="description" content="Encontre o veículo dos seus sonhos no AutoPortal.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">AutoPortal</a>
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="html/login.html">Login</a>
+                <a href="html/cadastro.html" class="btn btn-primary" style="color: white;">Criar Conta</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="form-group">
+                <label for="marca">Marca</label>
+                <select id="marca" class="form-control">
+                    <option value="">Todas as marcas</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="ford">Ford</option>
+                    <option value="honda">Honda</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo</label>
+                <input type="text" id="modelo" class="form-control" placeholder="Ex: Civic, Gol...">
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" class="form-control" placeholder="Ex: São Paulo">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" style="width: 100%;">Buscar Veículos</button>
+            </div>
+        </section>
+
+        <h2 class="page-title">Veículos em Destaque</h2>
+        <section class="grid-container">
+            <!-- Card 1 -->
+            <article class="card">
+                <img src="assets/images/chevrolet_onix_1.jpg" alt="Chevrolet Onix" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Chevrolet Onix</h3>
+                    <p class="card-text">LT 1.0 Flex - 2020</p>
+                    <p class="card-text">São Paulo, SP</p>
+                    <div class="card-price">R$ 55.900,00</div>
+                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <img src="assets/images/vw_polo_1.jpg" alt="Volkswagen Polo" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Volkswagen Polo</h3>
+                    <p class="card-text">Comfortline 200 TSI - 2021</p>
+                    <p class="card-text">Campinas, SP</p>
+                    <div class="card-price">R$ 78.500,00</div>
+                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <img src="assets/images/honda_civic_1.jpg" alt="Honda Civic" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Honda Civic</h3>
+                    <p class="card-text">EXL 2.0 - 2019</p>
+                    <p class="card-text">Belo Horizonte, MG</p>
+                    <div class="card-price">R$ 98.900,00</div>
+                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="card">
+                <img src="assets/images/fiat_argo_1.png" alt="Fiat Argo" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Fiat Argo</h3>
+                    <p class="card-text">Trekking 1.3 - 2022</p>
+                    <p class="card-text">Curitiba, PR</p>
+                    <div class="card-price">R$ 68.900,00</div>
+                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="card">
+                <img src="assets/images/toyota_corolla_1.jpg" alt="Toyota Corolla" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Toyota Corolla</h3>
+                    <p class="card-text">XEI 2.0 Flex - 2018</p>
+                    <p class="card-text">Rio de Janeiro, RJ</p>
+                    <div class="card-price">R$ 95.000,00</div>
+                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="card">
+                <img src="assets/images/jeep_renegade_1.jpg" alt="Jeep Renegade" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">Jeep Renegade</h3>
+                    <p class="card-text">Sport 1.8 Flex - 2020</p>
+                    <p class="card-text">Brasília, DF</p>
+                    <div class="card-price">R$ 82.500,00</div>
+                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 AutoPortal. Projeto Acadêmico UFU.</p>
+    </footer>
+</body>
+</html>
