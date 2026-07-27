@@ -19,3 +19,9 @@ node_modules/
 # Arquivos temporários
 *.tmp
 *.bak
+
+# Instruções gerais
+instructions/
+
+# Uploads de Usuários (Ignora fotos dinâmicas, mas mantém as originais/seeds)
+public/uploads/veiculos/foto_*

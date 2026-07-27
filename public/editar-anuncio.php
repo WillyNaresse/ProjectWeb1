@@ -1,21 +1,25 @@
+<?php
+require_once __DIR__ . '/../app/core/Session.php';
+Session::requirePageAuth();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do Anúncio - AutoPortal</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="dashboard.html" class="logo">AutoPortal <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">| Painel</span></a>
+            <a href="perfil.php" class="logo">AutoPortal <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: normal;">| Painel</span></a>
             <div class="nav-links">
-                <a href="../index.html">Início</a>
-                <a href="dashboard.html">Resumo</a>
-                <a href="meus_anuncios.html" style="color: var(--primary-color);">Meus Anúncios</a>
-                <a href="interesses.html">Mensagens</a>
-                <a href="../index.html" class="btn btn-secondary" style="color: white; padding: 0.4rem 0.8rem;">Sair</a>
+                <a href="index.php">Início</a>
+                <a href="perfil.php">Resumo</a>
+                <a href="meus-anuncios.php" style="color: var(--primary-color);">Meus Anúncios</a>
+                <a href="interesses.php">Mensagens</a>
+                <a href="index.php" class="btn btn-secondary" style="color: white; padding: 0.4rem 0.8rem;">Sair</a>
             </div>
         </nav>
     </header>
@@ -24,7 +28,7 @@
         <div class="page-title" style="display: flex; justify-content: space-between; align-items: center;">
             <h2>Detalhes do Seu Anúncio</h2>
             <div class="action-buttons">
-                <a href="meus_anuncios.html" class="btn btn-secondary">Voltar</a>
+                <a href="meus-anuncios.php" class="btn btn-secondary">Voltar</a>
                 <button type="button" class="btn btn-primary">Editar</button>
                 <button type="button" class="btn btn-danger">Excluir</button>
             </div>
@@ -32,11 +36,11 @@
 
         <section class="details-container">
             <div class="details-gallery">
-                <img src="../assets/images/chevrolet_onix_1.jpg" alt="Chevrolet Onix Principal" class="details-main-img">
+                <img src="assets/images/chevrolet_onix_1.jpg" alt="Chevrolet Onix Principal" class="details-main-img">
                 <div class="details-thumbnails">
-                    <img src="../assets/images/chevrolet_onix_1.jpg" alt="Thumb 1" class="thumb-img">
-                    <img src="../assets/images/chevrolet_onix_2.jpg" alt="Thumb 2" class="thumb-img">
-                    <img src="../assets/images/chevrolet_onix_3.jpg" alt="Thumb 3" class="thumb-img">
+                    <img src="assets/images/chevrolet_onix_1.jpg" alt="Thumb 1" class="thumb-img">
+                    <img src="assets/images/chevrolet_onix_2.jpg" alt="Thumb 2" class="thumb-img">
+                    <img src="assets/images/chevrolet_onix_3.jpg" alt="Thumb 3" class="thumb-img">
                 </div>
             </div>
 
@@ -62,7 +66,7 @@
                 <div style="background-color: #e8f4fd; padding: 1.5rem; border-radius: var(--border-radius); border: 1px solid #b6d4fe;">
                     <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Estatísticas do Anúncio</h3>
                     <p><strong>Visualizações:</strong> 245</p>
-                    <p><strong>Interesses Recebidos:</strong> 3 <a href="interesses.html" style="margin-left: 1rem; font-weight: bold;">Ver mensagens</a></p>
+                    <p><strong>Interesses Recebidos:</strong> 3 <a href="interesses.php" style="margin-left: 1rem; font-weight: bold;">Ver mensagens</a></p>
                 </div>
             </div>
         </section>
@@ -73,3 +77,4 @@
     </footer>
 </body>
 </html>
+

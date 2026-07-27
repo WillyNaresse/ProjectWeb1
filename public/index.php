@@ -6,15 +6,18 @@
     <title>AutoPortal - Classificados de Veículos</title>
     <meta name="description" content="Encontre o veículo dos seus sonhos no AutoPortal.">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/api.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/home.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">AutoPortal</a>
+            <a href="index.php" class="logo">AutoPortal</a>
             <div class="nav-links">
-                <a href="index.html">Início</a>
-                <a href="html/login.html">Login</a>
-                <a href="html/cadastro.html" class="btn btn-primary" style="color: white;">Criar Conta</a>
+                <a href="index.php">Início</a>
+                <a href="login.php">Login</a>
+                <a href="cadastro.php" class="btn btn-primary" style="color: white;">Criar Conta</a>
             </div>
         </nav>
     </header>
@@ -34,11 +37,15 @@
             </div>
             <div class="form-group">
                 <label for="modelo">Modelo</label>
-                <input type="text" id="modelo" class="form-control" placeholder="Ex: Civic, Gol...">
+                <select id="modelo" class="form-control">
+                    <option value="">Selecione uma marca primeiro</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="cidade">Cidade</label>
-                <input type="text" id="cidade" class="form-control" placeholder="Ex: São Paulo">
+                <select id="cidade" class="form-control">
+                    <option value="">Selecione um modelo primeiro</option>
+                </select>
             </div>
             <div class="form-group">
                 <button type="button" class="btn btn-primary" style="width: 100%;">Buscar Veículos</button>
@@ -55,7 +62,7 @@
                     <p class="card-text">LT 1.0 Flex - 2020</p>
                     <p class="card-text">São Paulo, SP</p>
                     <div class="card-price">R$ 55.900,00</div>
-                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="anuncio.php" class="btn btn-primary">Ver Detalhes</a>
                 </div>
             </article>
 
@@ -67,7 +74,7 @@
                     <p class="card-text">Comfortline 200 TSI - 2021</p>
                     <p class="card-text">Campinas, SP</p>
                     <div class="card-price">R$ 78.500,00</div>
-                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="anuncio.php" class="btn btn-primary">Ver Detalhes</a>
                 </div>
             </article>
 
@@ -79,7 +86,7 @@
                     <p class="card-text">EXL 2.0 - 2019</p>
                     <p class="card-text">Belo Horizonte, MG</p>
                     <div class="card-price">R$ 98.900,00</div>
-                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="anuncio.php" class="btn btn-primary">Ver Detalhes</a>
                 </div>
             </article>
 
@@ -91,7 +98,7 @@
                     <p class="card-text">Trekking 1.3 - 2022</p>
                     <p class="card-text">Curitiba, PR</p>
                     <div class="card-price">R$ 68.900,00</div>
-                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="anuncio.php" class="btn btn-primary">Ver Detalhes</a>
                 </div>
             </article>
 
@@ -103,7 +110,7 @@
                     <p class="card-text">XEI 2.0 Flex - 2018</p>
                     <p class="card-text">Rio de Janeiro, RJ</p>
                     <div class="card-price">R$ 95.000,00</div>
-                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="anuncio.php" class="btn btn-primary">Ver Detalhes</a>
                 </div>
             </article>
 
@@ -115,7 +122,7 @@
                     <p class="card-text">Sport 1.8 Flex - 2020</p>
                     <p class="card-text">Brasília, DF</p>
                     <div class="card-price">R$ 82.500,00</div>
-                    <a href="html/detalhes.html" class="btn btn-primary">Ver Detalhes</a>
+                    <a href="anuncio.php" class="btn btn-primary">Ver Detalhes</a>
                 </div>
             </article>
         </section>
@@ -126,3 +133,4 @@
     </footer>
 </body>
 </html>
+

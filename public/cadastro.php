@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - AutoPortal</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/api.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/cadastro.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo">AutoPortal</a>
+            <a href="index.php" class="logo">AutoPortal</a>
             <div class="nav-links">
-                <a href="../index.html">Início</a>
-                <a href="login.html">Login</a>
-                <a href="cadastro.html" class="btn btn-primary" style="color: white;">Criar Conta</a>
+                <a href="index.php">Início</a>
+                <a href="login.php">Login</a>
+                <a href="cadastro.php" class="btn btn-primary" style="color: white;">Criar Conta</a>
             </div>
         </nav>
     </header>
@@ -22,7 +25,7 @@
         <div class="container-box" style="width: 100%; max-width: 500px;">
             <h2 style="text-align: center; margin-bottom: 2rem;">Crie sua Conta</h2>
             
-            <form action="login.html" method="get">
+            <form action="login.php" method="get">
                 <div class="form-group">
                     <label for="nome">Nome Completo</label>
                     <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
@@ -59,7 +62,7 @@
             </form>
 
             <div style="text-align: center; margin-top: 1.5rem;">
-                <p>Já possui uma conta? <a href="login.html">Faça Login</a></p>
+                <p>Já possui uma conta? <a href="login.php">Faça Login</a></p>
             </div>
         </div>
     </main>
@@ -69,3 +72,4 @@
     </footer>
 </body>
 </html>
+

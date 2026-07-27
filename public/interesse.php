@@ -1,19 +1,23 @@
+<?php
+require_once __DIR__ . '/../app/core/Session.php';
+Session::requirePageAuth();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Interesse - AutoPortal</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="../index.html" class="logo">AutoPortal</a>
+            <a href="index.php" class="logo">AutoPortal</a>
             <div class="nav-links">
-                <a href="../index.html">Início</a>
-                <a href="login.html">Login</a>
-                <a href="cadastro.html" class="btn btn-primary" style="color: white;">Criar Conta</a>
+                <a href="index.php">Início</a>
+                <a href="login.php">Login</a>
+                <a href="cadastro.php" class="btn btn-primary" style="color: white;">Criar Conta</a>
             </div>
         </nav>
     </header>
@@ -42,7 +46,7 @@
                 </div>
 
                 <div class="form-group" style="margin-top: 2rem; display: flex; gap: 1rem;">
-                    <a href="detalhes.html" class="btn btn-secondary" style="flex: 1;">Cancelar</a>
+                    <a href="anuncio.php" class="btn btn-secondary" style="flex: 1;">Cancelar</a>
                     <button type="submit" class="btn btn-primary" style="flex: 1;">Enviar Interesse</button>
                 </div>
             </form>
@@ -54,3 +58,4 @@
     </footer>
 </body>
 </html>
+
