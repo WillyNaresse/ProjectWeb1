@@ -1,0 +1,38 @@
+name: Deploy to InfinityFree FTP
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'app/**'
+      - 'public/**'
+      - 'config/**'
+      - '.htaccess'
+
+jobs:
+  web-deploy:
+    name: Deploy to FTP
+    runs-on: ubuntu-latest
+    steps:
+    - name: Obter código mais recente
+      uses: actions/checkout@v4
+      
+    - name: Sincronizar via FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /htdocs/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          database/**
+          docker/**
+          instructions/**
+          docker-compose.yml
+          README.md
+          integrantes.txt
+          endereco.txt

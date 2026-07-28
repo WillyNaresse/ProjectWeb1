@@ -62,7 +62,7 @@ class AnuncioController {
             $idAnuncio = Anuncio::create($_POST, $idUsuario);
 
             // Upload de imagens
-            $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/veiculos/';
+            $uploadDir = __DIR__ . '/../../public/uploads/veiculos/';
             if (!is_dir($uploadDir)) {
                 mkdir($uploadDir, 0777, true);
             }
