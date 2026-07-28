@@ -1,6 +1,6 @@
 # AutoPortal - Portal de Anúncios de Veículos
 
-Bem-vindo ao **AutoPortal**, o seu sistema completo de classificados de veículos desenvolvido como projeto final da disciplina de Desenvolvimento Web I (Universidade Federal de Uberlândia - UFU). 
+Bem-vindo ao **AutoPortal**, o seu sistema completo de classificados de veículos desenvolvido como projeto final da disciplina de Desenvolvimento Web I (Universidade Federal de Uberlândia - UFU).
 
 Este repositório contém a versão completa (Etapa 3) que une uma interface fluída construída com tecnologias nativas e uma API robusta feita em PHP com Banco de Dados MySQL.
 
@@ -11,12 +11,14 @@ Este repositório contém a versão completa (Etapa 3) que une uma interface flu
 Este projeto seguiu rigorosamente os requisitos acadêmicos, mantendo-se livre de frameworks modernos (como React ou Tailwind) para focar no aprendizado dos fundamentos da web:
 
 **Front-end:**
+
 - HTML5 (Semântico)
 - CSS3 (Vanilla / Flexbox)
 - JavaScript (Vanilla / ES6+)
 - Fetch API para chamadas Assíncronas (AJAX)
 
 **Back-end:**
+
 - PHP 8
 - Padrão de Arquitetura MVC
 - Autenticação por Sessão Nativas (`session_start()`)
@@ -25,6 +27,7 @@ Este projeto seguiu rigorosamente os requisitos acadêmicos, mantendo-se livre d
 - Bcrypt para Hash de Senhas de Usuário
 
 **Banco de Dados & Infraestrutura:**
+
 - MySQL 8.0
 - Docker e Docker Compose (para facilidade de testes)
 
@@ -39,10 +42,11 @@ Para que o projeto funcione perfeitamente na sua máquina, você só precisa ter
 Abra o seu terminal (ou Git Bash) e digite o seguinte comando para baixar o projeto:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/ProjectWeb1.git
+git clone https://github.com/WillyNaresse/ProjectWeb1.git
 cd ProjectWeb1
 ```
-*(Lembre-se de substituir o link acima caso a URL do repositório mude)*
+
+_(Lembre-se de substituir o link acima caso a URL do repositório mude)_
 
 ### 2. Subindo o Servidor com Docker
 
@@ -52,11 +56,11 @@ Dentro da pasta do projeto, inicie os contêineres em segundo plano executando:
 docker compose up -d
 ```
 
-> **Aviso:** Na primeira vez, isso pode demorar alguns minutos pois o Docker baixará as imagens oficiais do PHP e do MySQL. 
+> **Aviso:** Na primeira vez, isso pode demorar alguns minutos pois o Docker baixará as imagens oficiais do PHP e do MySQL.
 
 ### 3. Acessando a Aplicação
 
-Uma vez que o terminal retorne sucesso, o sistema já estará no ar com o banco de dados populado com anúncios de teste! 
+Uma vez que o terminal retorne sucesso, o sistema já estará no ar com o banco de dados populado com anúncios de teste!
 
 Abra o seu navegador de preferência e acesse:
 👉 **[http://localhost:8000](http://localhost:8000)**
@@ -70,7 +74,7 @@ O sistema possui uma área pública (onde qualquer pessoa vê anúncios) e uma �
 - **E-mail:** `joao@email.com`
 - **Senha:** `root`
 
-Você também pode acessar a aba **"Cadastro"** na interface para criar um usuário próprio do zero. 
+Você também pode acessar a aba **"Cadastro"** na interface para criar um usuário próprio do zero.
 
 ---
 
@@ -84,7 +88,8 @@ docker compose down
 
 ---
 
-*Desenvolvido com ☕ e dedicação por:*
+_Desenvolvido com ☕ e dedicação por:_
+
 - Eduardo Oliveira Marson
 - Lorena Fernandes Izidoro
 - Luis Felipe Garcia de Souza Paim
