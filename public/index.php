@@ -52,7 +52,7 @@
             </div>
         </section>
 
-        <h2 class="page-title">Veículos em Destaque</h2>
+        <h2 class="page-title">Veículos em Destaqueeee</h2>
         <section class="grid-container">
             <!-- Card 1 -->
             <article class="card">
