@@ -6,10 +6,19 @@ class Database {
     
     public static function getConnection() {
         if (self::$instance === null) {
-            $host = getenv('DB_HOST') ?: 'localhost';
-            $db_name = getenv('DB_NAME') ?: 'autoportaldoc';
-            $username = getenv('DB_USER') ?: 'root';
-            $password = getenv('DB_PASSWORD') ?: 'root';
+            $configFile = __DIR__ . '/../../config.php';
+            if (file_exists($configFile)) {
+                require_once $configFile;
+                $host = DB_HOST;
+                $db_name = DB_NAME;
+                $username = DB_USER;
+                $password = DB_PASSWORD;
+            } else {
+                $host = getenv('DB_HOST') ?: 'localhost';
+                $db_name = getenv('DB_NAME') ?: 'autoportaldoc';
+                $username = getenv('DB_USER') ?: 'root';
+                $password = getenv('DB_PASSWORD') ?: 'root';
+            }
 
             try {
                 self::$instance = new PDO(

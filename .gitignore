@@ -15,6 +15,7 @@ node_modules/
 # Variáveis de ambiente
 .env
 .env.*
+config.php
 
 # Arquivos temporários
 *.tmp
