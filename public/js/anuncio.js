@@ -1,7 +1,10 @@
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     // Obter ID da URL
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
+
+    const campoTelefone = document.getElementById('int-telefone');
+    aplicarMascara(campoTelefone, formatarTelefone);
 
     if (id) {
         carregarDetalhes(id);
@@ -11,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const form = document.getElementById('form-interesse');
+
     if (form) {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -74,14 +78,21 @@ function preencherDOM(anuncio) {
 
 async function registrarInteresse(idAnuncio) {
     const nome = document.getElementById('int-nome').value;
-    const telefone = document.getElementById('int-telefone').value;
+    const campoTelefone = document.getElementById('int-telefone');
+    const telefone = campoTelefone.value.trim();
     const mensagem = document.getElementById('int-mensagem').value;
 
     if (!nome || !telefone || !mensagem) {
         alert('Por favor, preencha todos os campos do formulário de contato.');
         return;
     }
+    const quantidadeNumerosTelefone = somenteNumeros(telefone).length;
 
+    if (quantidadeNumerosTelefone !== 10 && quantidadeNumerosTelefone !== 11) {
+        alert('Informe um telefone com DDD e 10 ou 11 números.');
+        campoTelefone.focus();
+        return;
+    }
     try {
         const res = await fetchAPI('/interesses', {
             method: 'POST',
