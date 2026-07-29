@@ -50,7 +50,17 @@ Session::requirePageAuth();
                 <div class="grid-container" style="gap: 1rem; margin-bottom: 1rem;">
                     <div class="form-group" style="flex: 1; min-width: 150px;">
                         <label for="ano">Ano</label>
-                        <input type="text" id="ano" name="ano" class="form-control" placeholder="Ex: 2020/2021" required>
+                       <input
+                            type="number"
+                            id="ano"
+                            name="ano"
+                            class="form-control"
+                            placeholder="Ex: 2020"
+                            min="1900"
+                            max="2026"
+                            step="1"
+                            required
+                        >
                     </div>
                     
                     <div class="form-group" style="flex: 1; min-width: 150px;">
