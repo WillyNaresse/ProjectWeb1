@@ -33,12 +33,28 @@
 
                 <div class="form-group">
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" class="form-control" placeholder="000.000.000-00" required>
-                </div>
+                    <input
+                        type="text"
+                        id="cpf"
+                        class="form-control"
+                        placeholder="000.000.000-00"
+                        inputmode="numeric"
+                        maxlength="14"
+                        required
+                    >
 
                 <div class="form-group">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+                    <input
+                        type="tel"
+                        id="telefone"
+                        class="form-control"
+                        placeholder="(00) 00000-0000"
+                        inputmode="numeric"
+                        autocomplete="tel"
+                        maxlength="15"
+                        required
+                    >
                 </div>
 
                 <div class="form-group">

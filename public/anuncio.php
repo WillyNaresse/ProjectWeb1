@@ -63,7 +63,16 @@
                     </div>
                     <div class="form-group">
                         <label for="int-telefone">Seu Telefone</label>
-                        <input type="tel" id="int-telefone" class="form-control" required>
+                        <input
+                            type="tel"
+                            id="int-telefone"
+                            class="form-control"
+                            placeholder="(00) 00000-0000"
+                            inputmode="numeric"
+                            autocomplete="tel"
+                            maxlength="15"
+                            required
+                        >
                     </div>
                     <div class="form-group">
                         <label for="int-mensagem">Mensagem</label>

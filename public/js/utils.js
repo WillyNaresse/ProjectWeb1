@@ -83,3 +83,40 @@ async function logout() {
         alert('Erro ao sair.');
     }
 }
+
+function somenteNumeros(valor) {
+    return valor.replace(/\D/g, '');
+}
+
+function formatarCPF(valor) {
+    const numeros = somenteNumeros(valor).slice(0, 11);
+
+    return numeros
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d)/, '$1.$2')
+        .replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+}
+
+function formatarTelefone(valor) {
+    const numeros = somenteNumeros(valor).slice(0, 11);
+
+    if (numeros.length <= 10) {
+        return numeros
+            .replace(/^(\d{2})(\d)/, '($1) $2')
+            .replace(/(\d{4})(\d)/, '$1-$2');
+    }
+
+    return numeros
+        .replace(/^(\d{2})(\d)/, '($1) $2')
+        .replace(/(\d{5})(\d)/, '$1-$2');
+}
+
+function aplicarMascara(campo, formatador) {
+    if (!campo) {
+        return;
+    }
+
+    campo.addEventListener('input', () => {
+        campo.value = formatador(campo.value);
+    });
+}
