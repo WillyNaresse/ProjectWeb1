@@ -1,2 +1,2 @@
-URL do projeto:
-https://projectdevweb1.infinityfree.io/
+Nome do portal: AutoPortal
+URL de acesso: https://projectdevweb1.infinityfree.io/
